@@ -1,0 +1,1134 @@
+[
+  {
+    "id": 1,
+    "name_en": "99 Ranch Market (Monterey Park)",
+    "name_zh": "大华超市（蒙特利公园）",
+    "address": "771 W Garvey Ave, Monterey Park, CA 91754",
+    "lat": 34.0585,
+    "lng": -118.1389,
+    "category": "food",
+    "subcategory": "Chinese grocery store",
+    "need_stage": "just_arrived",
+    "languages": [
+      "Mandarin",
+      "Cantonese",
+      "English"
+    ],
+    "zone": "SGV",
+    "transit_accessible": true,
+    "nearest_transit": "Metro Bus 70",
+    "cultural_corridor": "Garvey Ave Corridor",
+    "metadata": {
+      "type": "supermarket",
+      "chain": true,
+      "hours": "8AM-10PM daily"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "name_en": "Hawaii Supermarket",
+    "name_zh": "夏威夷超级市场",
+    "address": "120 E Valley Blvd, San Gabriel, CA 91776",
+    "lat": 34.0785,
+    "lng": -118.1001,
+    "category": "food",
+    "subcategory": "Chinese grocery store",
+    "need_stage": "just_arrived",
+    "languages": [
+      "Mandarin",
+      "Cantonese",
+      "English"
+    ],
+    "zone": "SGV",
+    "transit_accessible": true,
+    "nearest_transit": "Metro Bus 76",
+    "cultural_corridor": "Valley Blvd Corridor",
+    "metadata": {
+      "type": "supermarket",
+      "chain": false,
+      "specialty": "Southeast Asian and Chinese groceries",
+      "established": 1991
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 3,
+    "name_en": "HK Good Fortune Supermarket (Monterey Park)",
+    "name_zh": "好运来超市（蒙市）",
+    "address": "127 N Garfield Ave, Monterey Park, CA 91754",
+    "lat": 34.0506,
+    "lng": -118.1322,
+    "category": "food",
+    "subcategory": "Chinese grocery store",
+    "need_stage": "just_arrived",
+    "languages": [
+      "Mandarin",
+      "Cantonese",
+      "English"
+    ],
+    "zone": "SGV",
+    "transit_accessible": true,
+    "nearest_transit": "Metro Bus 70",
+    "cultural_corridor": "Atlantic Blvd Corridor",
+    "metadata": {
+      "type": "supermarket",
+      "chain": true,
+      "specialty": "Hong Kong and Cantonese products"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 4,
+    "name_en": "Sichuan Impression",
+    "name_zh": "川味印象",
+    "address": "235 W Main St, Ste B, Alhambra, CA 91801",
+    "lat": 34.095,
+    "lng": -118.131,
+    "category": "food",
+    "subcategory": "Regional Chinese restaurant",
+    "need_stage": "living_here",
+    "languages": [
+      "Mandarin",
+      "English"
+    ],
+    "zone": "SGV",
+    "transit_accessible": true,
+    "nearest_transit": "Metro Bus 76",
+    "cultural_corridor": "Main St Alhambra",
+    "metadata": {
+      "cuisine": "Sichuan",
+      "michelin": true,
+      "price_range": "$$",
+      "spice_level": "high"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 5,
+    "name_en": "Chengdu Taste",
+    "name_zh": "成都味",
+    "address": "828 W Valley Blvd, Alhambra, CA 91803",
+    "lat": 34.0778,
+    "lng": -118.1324,
+    "category": "food",
+    "subcategory": "Regional Chinese restaurant",
+    "need_stage": "living_here",
+    "languages": [
+      "Mandarin",
+      "English"
+    ],
+    "zone": "SGV",
+    "transit_accessible": true,
+    "nearest_transit": "Metro Bus 76",
+    "cultural_corridor": "Valley Blvd Corridor",
+    "metadata": {
+      "cuisine": "Sichuan",
+      "famous_for": "Ignited LA Sichuan boom",
+      "price_range": "$$"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 6,
+    "name_en": "Atlantic Seafood & Dim Sum Restaurant",
+    "name_zh": "大西洋海鲜酒楼",
+    "address": "500 N Atlantic Blvd, Ste 200, Monterey Park, CA 91754",
+    "lat": 34.0556,
+    "lng": -118.1334,
+    "category": "food",
+    "subcategory": "Regional Chinese restaurant",
+    "need_stage": "living_here",
+    "languages": [
+      "Cantonese",
+      "Mandarin",
+      "English"
+    ],
+    "zone": "SGV",
+    "transit_accessible": true,
+    "nearest_transit": "Metro Bus 70",
+    "cultural_corridor": "Atlantic Blvd Corridor",
+    "metadata": {
+      "cuisine": "Cantonese",
+      "famous_for": "Traditional dim sum with cart service",
+      "price_range": "$$"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 7,
+    "name_en": "Northern Cafe",
+    "name_zh": "北方面馆",
+    "address": "2904 S Figueroa St, Los Angeles, CA 90007",
+    "lat": 34.0252,
+    "lng": -118.2787,
+    "category": "food",
+    "subcategory": "Regional Chinese restaurant",
+    "need_stage": "just_arrived",
+    "languages": [
+      "Mandarin",
+      "English"
+    ],
+    "zone": "USC",
+    "transit_accessible": true,
+    "nearest_transit": "Metro E Line Expo Park/USC",
+    "cultural_corridor": "Figueroa St near USC",
+    "metadata": {
+      "cuisine": "Northern Chinese",
+      "famous_for": "Noodles, dumplings",
+      "price_range": "$",
+      "popular_with": "USC students"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 8,
+    "name_en": "Qin West Noodle",
+    "name_zh": "桂陕一家",
+    "address": "2520 S Figueroa St, Los Angeles, CA 90007",
+    "lat": 34.0285,
+    "lng": -118.279,
+    "category": "food",
+    "subcategory": "Late-night food",
+    "need_stage": "just_arrived",
+    "languages": [
+      "Mandarin",
+      "English"
+    ],
+    "zone": "USC",
+    "transit_accessible": true,
+    "nearest_transit": "Metro E Line Expo Park/USC",
+    "cultural_corridor": "Figueroa St near USC",
+    "metadata": {
+      "cuisine": "Northern Chinese / Shaanxi",
+      "famous_for": "Hand-pulled noodles, liangpi, roujiamo",
+      "price_range": "$",
+      "hours": "11AM-9PM"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 9,
+    "name_en": "It's Boba Time (USC)",
+    "name_zh": "波霸时间",
+    "address": "3617 S Vermont Ave, Los Angeles, CA 90007",
+    "lat": 34.0198,
+    "lng": -118.2912,
+    "category": "food",
+    "subcategory": "Boba tea shop",
+    "need_stage": "just_arrived",
+    "languages": [
+      "English",
+      "Mandarin"
+    ],
+    "zone": "USC",
+    "transit_accessible": true,
+    "nearest_transit": "Metro E Line Expo/Vermont",
+    "cultural_corridor": "Vermont Ave near USC",
+    "metadata": {
+      "type": "boba shop",
+      "hours": "10AM-12AM daily",
+      "popular_with": "USC students"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 10,
+    "name_en": "Half & Half Tea Express",
+    "name_zh": "鲜茶道",
+    "address": "141 N Atlantic Blvd, Ste 112, Monterey Park, CA 91754",
+    "lat": 34.05,
+    "lng": -118.1336,
+    "category": "food",
+    "subcategory": "Boba tea shop",
+    "need_stage": "living_here",
+    "languages": [
+      "Mandarin",
+      "Cantonese",
+      "English"
+    ],
+    "zone": "SGV",
+    "transit_accessible": true,
+    "nearest_transit": "Metro Bus 70",
+    "cultural_corridor": "Atlantic Blvd Corridor",
+    "metadata": {
+      "type": "boba shop",
+      "famous_for": "Signature cream-top teas",
+      "hours": "11:15AM-9:30PM Mon-Sat"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 11,
+    "name_en": "Xiang La Hui",
+    "name_zh": "香辣汇",
+    "address": "621 W Main St, Alhambra, CA 91801",
+    "lat": 34.0942,
+    "lng": -118.138,
+    "category": "food",
+    "subcategory": "Regional Chinese restaurant",
+    "need_stage": "living_here",
+    "languages": [
+      "Mandarin",
+      "English"
+    ],
+    "zone": "SGV",
+    "transit_accessible": true,
+    "nearest_transit": "Metro Bus 76",
+    "cultural_corridor": "Main St Alhambra",
+    "metadata": {
+      "cuisine": "Sichuan / Chongqing",
+      "famous_for": "Chongqing fried chicken, toothpick lamb",
+      "price_range": "$$"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 12,
+    "name_en": "East West Bank (Monterey Park)",
+    "name_zh": "华美银行（蒙市）",
+    "address": "228 W Garvey Ave, Monterey Park, CA 91754",
+    "lat": 34.058,
+    "lng": -118.131,
+    "category": "services",
+    "subcategory": "Bank with Chinese-speaking staff",
+    "need_stage": "just_arrived",
+    "languages": [
+      "Mandarin",
+      "Cantonese",
+      "English"
+    ],
+    "zone": "SGV",
+    "transit_accessible": true,
+    "nearest_transit": "Metro Bus 70",
+    "cultural_corridor": "Garvey Ave Corridor",
+    "metadata": {
+      "type": "bank",
+      "founded": 1973,
+      "note": "Founded to serve Chinese American community"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 13,
+    "name_en": "Cathay Bank (Monterey Park)",
+    "name_zh": "国泰银行（蒙市）",
+    "address": "250 S Atlantic Blvd, Monterey Park, CA 91754",
+    "lat": 34.0465,
+    "lng": -118.1335,
+    "category": "services",
+    "subcategory": "Bank with Chinese-speaking staff",
+    "need_stage": "just_arrived",
+    "languages": [
+      "Mandarin",
+      "Cantonese",
+      "English"
+    ],
+    "zone": "SGV",
+    "transit_accessible": true,
+    "nearest_transit": "Metro Bus 70",
+    "cultural_corridor": "Atlantic Blvd Corridor",
+    "metadata": {
+      "type": "bank",
+      "founded": 1962,
+      "note": "First Chinese American commercial bank in SoCal"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 14,
+    "name_en": "Cricket Wireless (near USC)",
+    "name_zh": "Cricket手机店",
+    "address": "2120 W 7th St, Los Angeles, CA 90057",
+    "lat": 34.054,
+    "lng": -118.275,
+    "category": "services",
+    "subcategory": "Phone/SIM card shop",
+    "need_stage": "just_arrived",
+    "languages": [
+      "English",
+      "Mandarin"
+    ],
+    "zone": "USC",
+    "transit_accessible": true,
+    "nearest_transit": "Metro B/D Line Westlake/MacArthur Park",
+    "cultural_corridor": null,
+    "metadata": {
+      "type": "phone store",
+      "services": [
+        "prepaid SIM",
+        "phone activation",
+        "plans"
+      ]
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 15,
+    "name_en": "SF Express (Los Angeles Hub)",
+    "name_zh": "顺丰速运（洛杉矶）",
+    "address": "300 W Valley Blvd, Ste 108, Alhambra, CA 91803",
+    "lat": 34.079,
+    "lng": -118.138,
+    "category": "services",
+    "subcategory": "Shipping services to China",
+    "need_stage": "settling_in",
+    "languages": [
+      "Mandarin",
+      "English"
+    ],
+    "zone": "SGV",
+    "transit_accessible": true,
+    "nearest_transit": "Metro Bus 76",
+    "cultural_corridor": null,
+    "metadata": {
+      "type": "shipping",
+      "services": [
+        "Express to China",
+        "Standard Express"
+      ],
+      "delivery_time": "3-7 business days to China",
+      "note": "Drop-off location; main hub in Cerritos"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 16,
+    "name_en": "AAA Alhambra (DMV Services)",
+    "name_zh": "DMV服务中心（阿罕布拉）",
+    "address": "401 E Main St, Suite 101, Alhambra, CA 91801",
+    "lat": 34.095,
+    "lng": -118.1222,
+    "category": "services",
+    "subcategory": "DMV office",
+    "need_stage": "settling_in",
+    "languages": [
+      "English"
+    ],
+    "zone": "SGV",
+    "transit_accessible": true,
+    "nearest_transit": "Metro Bus 76",
+    "cultural_corridor": "Main St Alhambra",
+    "metadata": {
+      "type": "DMV partner",
+      "services": [
+        "registration",
+        "vehicle records"
+      ]
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 17,
+    "name_en": "American Immigration Law Firm",
+    "name_zh": "美国移民律师事务所",
+    "address": "300 S Garfield Ave, Monterey Park, CA 91754",
+    "lat": 34.0475,
+    "lng": -118.132,
+    "category": "services",
+    "subcategory": "Immigration attorney",
+    "need_stage": "settling_in",
+    "languages": [
+      "Mandarin",
+      "Cantonese",
+      "English"
+    ],
+    "zone": "SGV",
+    "transit_accessible": true,
+    "nearest_transit": "Metro Bus 70",
+    "cultural_corridor": "Atlantic Blvd Corridor",
+    "metadata": {
+      "type": "immigration law",
+      "services": [
+        "visa petitions",
+        "OPT/CPT",
+        "green card",
+        "citizenship"
+      ]
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 18,
+    "name_en": "Chinatown Service Center (Dental & Medical)",
+    "name_zh": "华埠服务中心",
+    "address": "767 N Hill St, Suite 315, Los Angeles, CA 90012",
+    "lat": 34.062,
+    "lng": -118.24,
+    "category": "services",
+    "subcategory": "Chinese-speaking doctor/dentist",
+    "need_stage": "settling_in",
+    "languages": [
+      "Mandarin",
+      "Cantonese",
+      "English"
+    ],
+    "zone": "DTLA",
+    "transit_accessible": true,
+    "nearest_transit": "Metro L Line Chinatown Station",
+    "cultural_corridor": "Chinatown",
+    "metadata": {
+      "type": "community health center",
+      "services": [
+        "dental",
+        "medical",
+        "mental health"
+      ],
+      "hours": "Mon-Sat 8:30AM-5PM",
+      "accepts_insurance": true
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 19,
+    "name_en": "Chinatown Service Center (Monterey Park)",
+    "name_zh": "华埠服务中心（蒙市分部）",
+    "address": "855 S Atlantic Blvd, Monterey Park, CA 91754",
+    "lat": 34.041,
+    "lng": -118.1335,
+    "category": "services",
+    "subcategory": "Chinese-speaking doctor/dentist",
+    "need_stage": "settling_in",
+    "languages": [
+      "Mandarin",
+      "Cantonese",
+      "English"
+    ],
+    "zone": "SGV",
+    "transit_accessible": true,
+    "nearest_transit": "Metro Bus 70",
+    "cultural_corridor": "Atlantic Blvd Corridor",
+    "metadata": {
+      "type": "community health center",
+      "services": [
+        "health services",
+        "social services",
+        "immigration assistance"
+      ]
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 20,
+    "name_en": "USC Engemann Student Health Center",
+    "name_zh": "南加大学生健康中心",
+    "address": "1031 W 34th St, Los Angeles, CA 90089",
+    "lat": 34.0228,
+    "lng": -118.287,
+    "category": "services",
+    "subcategory": "Chinese-speaking doctor/dentist",
+    "need_stage": "settling_in",
+    "languages": [
+      "English"
+    ],
+    "zone": "USC",
+    "transit_accessible": true,
+    "nearest_transit": "Metro E Line Expo Park/USC",
+    "cultural_corridor": "USC Campus",
+    "metadata": {
+      "type": "student health center",
+      "services": [
+        "primary care",
+        "dental",
+        "mental health",
+        "pharmacy"
+      ],
+      "note": "USC student insurance accepted"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 21,
+    "name_en": "Monterey Park Chinese Baptist Church",
+    "name_zh": "慕道园华人浸信会",
+    "address": "302 W Commonwealth Ave, Alhambra, CA 91801",
+    "lat": 34.0878,
+    "lng": -118.134,
+    "category": "spiritual",
+    "subcategory": "Chinese church",
+    "need_stage": "settling_in",
+    "languages": [
+      "Mandarin",
+      "Cantonese",
+      "English"
+    ],
+    "zone": "SGV",
+    "transit_accessible": true,
+    "nearest_transit": "Metro Bus 76",
+    "cultural_corridor": "Alhambra",
+    "metadata": {
+      "denomination": "Baptist (SBC)",
+      "services": {
+        "mandarin": "Sunday 9:00 AM",
+        "cantonese": "Sunday 11:00 AM",
+        "english": "Sunday 11:00 AM"
+      }
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 22,
+    "name_en": "Chinese Evangelical Free Church of Los Angeles",
+    "name_zh": "罗省华人播道会",
+    "address": "1111 S Atlantic Blvd, Monterey Park, CA 91754",
+    "lat": 34.038,
+    "lng": -118.1335,
+    "category": "spiritual",
+    "subcategory": "Chinese church",
+    "need_stage": "settling_in",
+    "languages": [
+      "Mandarin",
+      "Cantonese",
+      "English"
+    ],
+    "zone": "SGV",
+    "transit_accessible": true,
+    "nearest_transit": "Metro Bus 70",
+    "cultural_corridor": "Atlantic Blvd Corridor",
+    "metadata": {
+      "denomination": "Evangelical Free",
+      "established": 1974,
+      "services": {
+        "mandarin": "Sunday 9:30 AM",
+        "cantonese": "Sunday 9:30 AM",
+        "english": "Sunday 11:15 AM"
+      }
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 23,
+    "name_en": "Hsi Lai Temple",
+    "name_zh": "佛光山西来寺",
+    "address": "3456 Glenmark Dr, Hacienda Heights, CA 91745",
+    "lat": 33.987,
+    "lng": -117.972,
+    "category": "spiritual",
+    "subcategory": "Buddhist temple",
+    "need_stage": "settling_in",
+    "languages": [
+      "Mandarin",
+      "English"
+    ],
+    "zone": "SGV",
+    "transit_accessible": false,
+    "nearest_transit": null,
+    "cultural_corridor": "Hacienda Heights",
+    "metadata": {
+      "tradition": "Fo Guang Shan (Mahayana Buddhism)",
+      "note": "Largest Buddhist monastery in the Western Hemisphere",
+      "hours": "9AM-5PM daily",
+      "tours_available": true
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 24,
+    "name_en": "Wong Tai Sen Taoism Center",
+    "name_zh": "黄大仙道观",
+    "address": "529 S Atlantic Blvd, Monterey Park, CA 91754",
+    "lat": 34.0438,
+    "lng": -118.1335,
+    "category": "spiritual",
+    "subcategory": "Buddhist temple",
+    "need_stage": "settling_in",
+    "languages": [
+      "Cantonese",
+      "Mandarin"
+    ],
+    "zone": "SGV",
+    "transit_accessible": true,
+    "nearest_transit": "Metro Bus 70",
+    "cultural_corridor": "Atlantic Blvd Corridor",
+    "metadata": {
+      "tradition": "Taoism / Chinese folk religion",
+      "note": "Popular for fortune telling and prayers"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 25,
+    "name_en": "USC Chinese Students and Scholars Association (CSSA)",
+    "name_zh": "南加大中国学生学者联合会",
+    "address": "3551 Trousdale Pkwy, Los Angeles, CA 90089",
+    "lat": 34.0224,
+    "lng": -118.2851,
+    "category": "spiritual",
+    "subcategory": "Chinese student organization",
+    "need_stage": "settling_in",
+    "languages": [
+      "Mandarin",
+      "English"
+    ],
+    "zone": "USC",
+    "transit_accessible": true,
+    "nearest_transit": "Metro E Line Expo Park/USC",
+    "cultural_corridor": "USC Campus",
+    "metadata": {
+      "type": "student organization",
+      "platform": "EngageSC",
+      "activities": [
+        "new student orientation",
+        "cultural events",
+        "career networking",
+        "Spring Festival gala"
+      ],
+      "note": "Campus address — events held at various USC venues"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 26,
+    "name_en": "Luxy Karaoke Lounge & Bar",
+    "name_zh": "Luxy KTV",
+    "address": "400 S Baldwin Ave, Ste 2225, Arcadia, CA 91007",
+    "lat": 34.13,
+    "lng": -118.0355,
+    "category": "fun",
+    "subcategory": "KTV/Karaoke",
+    "need_stage": "living_here",
+    "languages": [
+      "Mandarin",
+      "Cantonese",
+      "English"
+    ],
+    "zone": "SGV",
+    "transit_accessible": true,
+    "nearest_transit": "Metro L Line Arcadia Station",
+    "cultural_corridor": "Westfield Santa Anita",
+    "metadata": {
+      "type": "KTV",
+      "hours": "2PM-2AM daily",
+      "features": [
+        "private rooms",
+        "bar",
+        "food menu"
+      ],
+      "popular_with": "Chinese students and young professionals"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 27,
+    "name_en": "Haidilao Hot Pot (Arcadia)",
+    "name_zh": "海底捞火锅（亚凯迪亚）",
+    "address": "400 S Baldwin Ave, Ste 2015, Arcadia, CA 91007",
+    "lat": 34.1302,
+    "lng": -118.0352,
+    "category": "fun",
+    "subcategory": "Hot pot restaurant",
+    "need_stage": "living_here",
+    "languages": [
+      "Mandarin",
+      "English"
+    ],
+    "zone": "SGV",
+    "transit_accessible": true,
+    "nearest_transit": "Metro L Line Arcadia Station",
+    "cultural_corridor": "Westfield Santa Anita",
+    "metadata": {
+      "cuisine": "Sichuan hot pot",
+      "chain": true,
+      "famous_for": "Noodle dance performance, exceptional service",
+      "price_range": "$$$",
+      "popular_with": "Chinese students for celebrations"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 28,
+    "name_en": "Big Way Hot Pot",
+    "name_zh": "大味火锅",
+    "address": "500 N Atlantic Blvd, Monterey Park, CA 91754",
+    "lat": 34.0558,
+    "lng": -118.1334,
+    "category": "fun",
+    "subcategory": "Hot pot restaurant",
+    "need_stage": "living_here",
+    "languages": [
+      "Mandarin",
+      "English"
+    ],
+    "zone": "SGV",
+    "transit_accessible": true,
+    "nearest_transit": "Metro Bus 70",
+    "cultural_corridor": "Atlantic Blvd Corridor",
+    "metadata": {
+      "cuisine": "Chinese hot pot",
+      "famous_for": "100+ ingredients, 18+ broth options",
+      "price_range": "$$"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 29,
+    "name_en": "AMC Atlantic Times Square 14",
+    "name_zh": "AMC大西洋时代广场影院",
+    "address": "450 N Atlantic Blvd, Monterey Park, CA 91754",
+    "lat": 34.0548,
+    "lng": -118.1334,
+    "category": "fun",
+    "subcategory": "Movie theater / Cultural venue",
+    "need_stage": "living_here",
+    "languages": [
+      "English",
+      "Mandarin"
+    ],
+    "zone": "SGV",
+    "transit_accessible": true,
+    "nearest_transit": "Metro Bus 70",
+    "cultural_corridor": "Atlantic Blvd Corridor",
+    "metadata": {
+      "type": "movie theater",
+      "screens": 14,
+      "note": "Shows Chinese-language films during major releases",
+      "nearby": "Atlantic Times Square shopping center"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 30,
+    "name_en": "Amino Avenue Healthy Boba",
+    "name_zh": "Amino健康波霸",
+    "address": "2700 S Figueroa St, Ste 105, Los Angeles, CA 90007",
+    "lat": 34.027,
+    "lng": -118.278,
+    "category": "fun",
+    "subcategory": "Boba hangout",
+    "need_stage": "living_here",
+    "languages": [
+      "English",
+      "Mandarin"
+    ],
+    "zone": "USC",
+    "transit_accessible": true,
+    "nearest_transit": "Metro E Line Expo Park/USC",
+    "cultural_corridor": "Figueroa St near USC",
+    "metadata": {
+      "type": "boba shop / hangout",
+      "famous_for": "High-protein, low-sugar boba",
+      "popular_with": "USC students"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 31,
+    "name_en": "USC Office of International Services (OIS)",
+    "name_zh": "南加大国际学生服务办公室",
+    "address": "3601 Watt Way, GFS 120, Los Angeles, CA 90089",
+    "lat": 34.021,
+    "lng": -118.2863,
+    "category": "academic",
+    "subcategory": "USC campus resource",
+    "need_stage": "just_arrived",
+    "languages": [
+      "English",
+      "Mandarin"
+    ],
+    "zone": "USC",
+    "transit_accessible": true,
+    "nearest_transit": "Metro E Line Expo Park/USC",
+    "cultural_corridor": "USC Campus",
+    "metadata": {
+      "type": "university office",
+      "services": [
+        "visa advising",
+        "OPT/CPT processing",
+        "new student orientation",
+        "immigration workshops"
+      ],
+      "phone": "(213) 740-2666"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 32,
+    "name_en": "Monterey Books & Stationers",
+    "name_zh": "蒙市书店",
+    "address": "107 E Garvey Ave, Monterey Park, CA 91754",
+    "lat": 34.0582,
+    "lng": -118.127,
+    "category": "academic",
+    "subcategory": "Chinese bookstore",
+    "need_stage": "living_here",
+    "languages": [
+      "Mandarin",
+      "Cantonese",
+      "English"
+    ],
+    "zone": "SGV",
+    "transit_accessible": true,
+    "nearest_transit": "Metro Bus 70",
+    "cultural_corridor": "Garvey Ave Corridor",
+    "metadata": {
+      "type": "bookstore",
+      "specialty": "Chinese language books, stationery",
+      "website": "ChineseBooksUSA.com"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 33,
+    "name_en": "Elite Prep (Arcadia)",
+    "name_zh": "精英学院（亚凯迪亚）",
+    "address": "1127 S Baldwin Ave, Arcadia, CA 91007",
+    "lat": 34.125,
+    "lng": -118.0355,
+    "category": "academic",
+    "subcategory": "Tutoring/test prep center",
+    "need_stage": "working_here",
+    "languages": [
+      "English",
+      "Mandarin"
+    ],
+    "zone": "SGV",
+    "transit_accessible": true,
+    "nearest_transit": "Metro L Line Arcadia Station",
+    "cultural_corridor": "Arcadia",
+    "metadata": {
+      "type": "test prep",
+      "services": [
+        "SAT prep",
+        "ACT prep",
+        "AP exam prep",
+        "college consulting"
+      ],
+      "popular_with": "Chinese students and families"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 34,
+    "name_en": "WeWork (Downtown LA - South Olive)",
+    "name_zh": "WeWork联合办公（洛杉矶市中心）",
+    "address": "1150 S Olive St, Los Angeles, CA 90015",
+    "lat": 34.038,
+    "lng": -118.262,
+    "category": "academic",
+    "subcategory": "Co-working space",
+    "need_stage": "working_here",
+    "languages": [
+      "English"
+    ],
+    "zone": "DTLA",
+    "transit_accessible": true,
+    "nearest_transit": "Metro A/E Line Pico Station",
+    "cultural_corridor": "South Park DTLA",
+    "metadata": {
+      "type": "co-working",
+      "amenities": [
+        "WiFi",
+        "meeting rooms",
+        "phone booths",
+        "kitchen"
+      ],
+      "note": "Popular with international professionals and startups"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 35,
+    "name_en": "USC Libraries - East Asian Collection",
+    "name_zh": "南加大图书馆东亚文库",
+    "address": "3550 Trousdale Pkwy, Los Angeles, CA 90089",
+    "lat": 34.0215,
+    "lng": -118.284,
+    "category": "academic",
+    "subcategory": "USC campus resource",
+    "need_stage": "just_arrived",
+    "languages": [
+      "English",
+      "Mandarin"
+    ],
+    "zone": "USC",
+    "transit_accessible": true,
+    "nearest_transit": "Metro E Line Expo Park/USC",
+    "cultural_corridor": "USC Campus",
+    "metadata": {
+      "type": "library",
+      "collections": [
+        "Chinese language materials",
+        "East Asian studies",
+        "Chinese newspapers"
+      ],
+      "location_detail": "Doheny Memorial Library"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 36,
+    "name_en": "Chinese American Golden Age Association",
+    "name_zh": "中美老人活动中心",
+    "address": "234 N Rural Dr, Monterey Park, CA 91755",
+    "lat": 34.053,
+    "lng": -118.121,
+    "category": "spiritual",
+    "subcategory": "Community center",
+    "need_stage": "settling_in",
+    "languages": [
+      "Mandarin",
+      "Cantonese",
+      "English"
+    ],
+    "zone": "SGV",
+    "transit_accessible": true,
+    "nearest_transit": "Metro Bus 70",
+    "cultural_corridor": "Monterey Park",
+    "metadata": {
+      "type": "community center",
+      "services": [
+        "cultural activities",
+        "health workshops",
+        "social events"
+      ],
+      "note": "Good for connecting with broader Chinese community"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 37,
+    "name_en": "Qin West Noodle (Chinatown)",
+    "name_zh": "桂陕一家（中国城）",
+    "address": "727 N Broadway, Los Angeles, CA 90012",
+    "lat": 34.0618,
+    "lng": -118.24,
+    "category": "food",
+    "subcategory": "Late-night food",
+    "need_stage": "living_here",
+    "languages": [
+      "Mandarin",
+      "English"
+    ],
+    "zone": "DTLA",
+    "transit_accessible": true,
+    "nearest_transit": "Metro L Line Chinatown Station",
+    "cultural_corridor": "Chinatown",
+    "metadata": {
+      "cuisine": "Northern Chinese / Shaanxi",
+      "famous_for": "Hand-pulled noodles, liangpi",
+      "price_range": "$"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 38,
+    "name_en": "Dim Sum Express",
+    "name_zh": "点心快餐",
+    "address": "326 N Garfield Ave, Monterey Park, CA 91754",
+    "lat": 34.052,
+    "lng": -118.1322,
+    "category": "food",
+    "subcategory": "Regional Chinese restaurant",
+    "need_stage": "just_arrived",
+    "languages": [
+      "Cantonese",
+      "Mandarin",
+      "English"
+    ],
+    "zone": "SGV",
+    "transit_accessible": true,
+    "nearest_transit": "Metro Bus 70",
+    "cultural_corridor": "Garfield Ave Corridor",
+    "metadata": {
+      "cuisine": "Cantonese",
+      "famous_for": "Affordable quick dim sum",
+      "price_range": "$"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 39,
+    "name_en": "Yi Fang Taiwan Fruit Tea (Koreatown)",
+    "name_zh": "一芳水果茶（韩国城）",
+    "address": "3726 W 6th St, Los Angeles, CA 90020",
+    "lat": 34.0635,
+    "lng": -118.3085,
+    "category": "fun",
+    "subcategory": "Boba hangout",
+    "need_stage": "living_here",
+    "languages": [
+      "English",
+      "Mandarin"
+    ],
+    "zone": "USC",
+    "transit_accessible": true,
+    "nearest_transit": "Metro B/D Line Wilshire/Western",
+    "cultural_corridor": "Koreatown",
+    "metadata": {
+      "type": "boba shop / hangout",
+      "chain": true,
+      "famous_for": "Fresh fruit teas, Taiwanese style"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  },
+  {
+    "id": 40,
+    "name_en": "USC US-China Institute",
+    "name_zh": "南加大美中学院",
+    "address": "3502 Watt Way, ASC 105, Los Angeles, CA 90089",
+    "lat": 34.0218,
+    "lng": -118.2855,
+    "category": "academic",
+    "subcategory": "USC campus resource",
+    "need_stage": "settling_in",
+    "languages": [
+      "English",
+      "Mandarin"
+    ],
+    "zone": "USC",
+    "transit_accessible": true,
+    "nearest_transit": "Metro E Line Expo Park/USC",
+    "cultural_corridor": "USC Campus",
+    "metadata": {
+      "type": "research institute",
+      "activities": [
+        "lectures",
+        "film screenings",
+        "research events",
+        "cultural programming"
+      ],
+      "note": "Hosts events connecting Chinese and American perspectives"
+    },
+    "last_verified": "2026-03",
+    "status": "active"
+  }
+]

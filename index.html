@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>落脚 LuoJiao — Cultural Navigation for Chinese Students in LA</title>
+  <meta name="description" content="Find where you belong in Los Angeles. A cultural navigation map for Chinese international students. 在洛杉矶找到属于你的地方。留学生文化导航地图。">
+
+  <!-- Open Graph / WeChat -->
+  <meta property="og:title" content="落脚 LuoJiao — 留学生洛杉矶文化导航">
+  <meta property="og:description" content="刚到洛杉矶？让我们帮你找到属于你的地方。Just arrived in LA? Find where you belong.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" crossorigin="">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" crossorigin="">
+
+  <!-- App styles -->
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-brand">
+      <span class="nav-brand-zh">落脚</span>
+      <span class="nav-brand-en">LuoJiao</span>
+    </div>
+    <div class="nav-actions">
+      <button class="nav-btn" id="btn-72h" aria-label="First 72 Hours guide">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <span data-i18n="onboard.reenter">头72小时</span>
+      </button>
+      <button class="nav-btn" id="btn-corridors" aria-label="Toggle transit corridors">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+        <span data-i18n="corridor.toggle">公交线路</span>
+      </button>
+      <button class="nav-btn" id="btn-lang" aria-label="Toggle language">EN</button>
+    </div>
+  </nav>
+
+  <!-- Filters -->
+  <div id="filters"></div>
+
+  <!-- Map -->
+  <div id="map"></div>
+
+  <!-- Sidebar / Bottom Sheet -->
+  <div id="sidebar-overlay"></div>
+  <div id="sidebar" role="dialog" aria-label="Place details"></div>
+
+  <!-- Onboarding overlay -->
+  <div id="onboarding" role="dialog" aria-label="First 72 Hours guide"></div>
+
+  <!-- Privacy footer -->
+  <div class="footer-privacy" data-i18n="footer.privacy">无需注册。不追踪。我们不收集任何数据。</div>
+
+  <!-- Print checklist (hidden, shown only when printing) -->
+  <div class="print-checklist" id="print-checklist"></div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" crossorigin=""></script>
+
+  <!-- App bundle -->
+  <script src="dist/app.js"></script>
+</body>
+</html>
