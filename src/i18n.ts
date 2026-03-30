@@ -86,10 +86,10 @@ const strings: Record<string, Record<Lang, string>> = {
   'print.btn': { en: 'Print Checklist', zh: '打印清单' },
 };
 
-function safeGetItem(key: string): string | null {
+export function safeGetItem(key: string): string | null {
   try { return localStorage.getItem(key); } catch { return null; }
 }
-function safeSetItem(key: string, value: string): void {
+export function safeSetItem(key: string, value: string): void {
   try { localStorage.setItem(key, value); } catch { /* noop */ }
 }
 

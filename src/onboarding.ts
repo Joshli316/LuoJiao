@@ -1,5 +1,5 @@
 import { Place, getPlaces } from './data';
-import { t, getLang } from './i18n';
+import { t, getLang, safeGetItem, safeSetItem } from './i18n';
 import { highlightPlaces, resetMarkerStyles, fitToPlaces, getMap } from './map';
 import { clearFilters } from './filters';
 
@@ -51,8 +51,7 @@ export function initOnboarding(): void {
   onboardEl = document.getElementById('onboarding')!;
 
   // Show onboarding for first-time visitors
-  let hasVisited: string | null = null;
-  try { hasVisited = localStorage.getItem('luojiao-visited'); } catch { /* noop */ }
+  const hasVisited = safeGetItem('luojiao-visited');
   if (!hasVisited) {
     showOnboarding();
   }
@@ -82,7 +81,7 @@ export function hideOnboarding(): void {
   }, 350);
   resetMarkerStyles();
   clearFilters();
-  try { localStorage.setItem('luojiao-visited', '1'); } catch { /* noop */ }
+  safeSetItem('luojiao-visited', '1');
 }
 
 function renderStep(): void {

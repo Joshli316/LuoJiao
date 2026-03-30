@@ -21,7 +21,6 @@ let onFilterChange: (places: Place[]) => void = () => {};
 
 const CATEGORIES = ['food', 'services', 'spiritual', 'fun', 'academic'];
 const STAGES = ['just_arrived', 'settling_in', 'living_here', 'working_here'];
-const LANGUAGES = ['Mandarin', 'Cantonese', 'English'];
 const ZONES = ['SGV', 'USC', 'DTLA'];
 
 export function initFilters(onChange: (places: Place[]) => void): void {
@@ -62,8 +61,6 @@ function applyFilters(): void {
 }
 
 function updateCounts(): void {
-  const allPlaces = getPlaces();
-  // Update category counts
   CATEGORIES.forEach(cat => {
     const count = filterPlaces({ ...state, categories: [cat] }).length;
     const el = document.querySelector(`[data-chip="${cat}"] .chip-count`);

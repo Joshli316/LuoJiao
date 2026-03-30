@@ -15,17 +15,17 @@ export function initSidebar(closeCallback: () => void): void {
   onClose = closeCallback;
   sidebarEl = document.getElementById('sidebar')!;
   overlayEl = document.getElementById('sidebar-overlay')!;
-
   overlayEl.addEventListener('click', closeSidebar);
+}
 
-  // Bottom sheet touch gestures (mobile)
+function bindSidebarEvents(): void {
+  sidebarEl.querySelector('.sidebar-close')?.addEventListener('click', closeSidebar);
   const handle = sidebarEl.querySelector('.sidebar-handle');
   if (handle) {
     (handle as HTMLElement).addEventListener('touchstart', onTouchStart as EventListener, { passive: true });
     (handle as HTMLElement).addEventListener('touchmove', onTouchMove as EventListener, { passive: false });
     handle.addEventListener('touchend', onTouchEnd);
   }
-
 }
 
 function onTouchStart(e: any): void {
@@ -142,22 +142,14 @@ export function openPlace(place: Place): void {
     </div>
   `;
 
-  // Bind close
-  sidebarEl.querySelector('.sidebar-close')?.addEventListener('click', closeSidebar);
+  bindSidebarEvents();
 
-  // Bind flag
   sidebarEl.querySelector('#flag-btn')?.addEventListener('click', (e) => {
     const btn = e.currentTarget as HTMLButtonElement;
     btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> ${t('sidebar.flagged')}`;
     btn.disabled = true;
     btn.classList.add('flagged');
   });
-
-  // Re-bind touch events on new handle
-  const handle = sidebarEl.querySelector('.sidebar-handle')!;
-  handle.addEventListener('touchstart', onTouchStart, { passive: true });
-  handle.addEventListener('touchmove', onTouchMove, { passive: false });
-  handle.addEventListener('touchend', onTouchEnd);
 
   openSidebar();
 }
@@ -190,13 +182,7 @@ export function openCorridor(corridor: Corridor): void {
     </div>
   `;
 
-  sidebarEl.querySelector('.sidebar-close')?.addEventListener('click', closeSidebar);
-
-  const handle = sidebarEl.querySelector('.sidebar-handle')!;
-  handle.addEventListener('touchstart', onTouchStart, { passive: true });
-  handle.addEventListener('touchmove', onTouchMove, { passive: false });
-  handle.addEventListener('touchend', onTouchEnd);
-
+  bindSidebarEvents();
   openSidebar();
 }
 

@@ -1,5 +1,5 @@
 import { Place, setPlaces, getPlaces, filterPlaces, Corridor } from './data';
-import { initMap, renderMarkers, renderCorridors, toggleCorridors, showCorridors, deselectMarker, panToPlace, fitToPlaces } from './map';
+import { initMap, renderMarkers, renderCorridors, toggleCorridors, showCorridors, areCorridorsVisible, deselectMarker, panToPlace, fitToPlaces } from './map';
 import { initFilters, getFilterState } from './filters';
 import { initSidebar, openPlace, openCorridor } from './sidebar';
 import { initOnboarding } from './onboarding';
@@ -8,70 +8,46 @@ import { t, getLang, setLang, toggleLang } from './i18n';
 import seedData from '../data/places.json';
 
 function init(): void {
-  // Load seed data
   setPlaces(seedData as Place[]);
+  initMap();
+  initSidebar(() => deselectMarker());
+  initFilters((filtered: Place[]) => renderMarkers(filtered, handlePlaceClick));
 
-  // Initialize map
-  const map = initMap();
-
-  // Initialize sidebar
-  initSidebar(() => {
-    deselectMarker();
-  });
-
-  // Initialize filters
-  initFilters((filtered: Place[]) => {
-    renderMarkers(filtered, handlePlaceClick);
-  });
-
-  // Initial render
   const allPlaces = getPlaces();
   renderMarkers(allPlaces, handlePlaceClick);
-
-  // Render corridors
   renderCorridors(handleCorridorClick);
 
-  // Corridor toggle button
   document.getElementById('btn-corridors')?.addEventListener('click', () => {
     const visible = toggleCorridors();
     const btn = document.getElementById('btn-corridors')!;
     btn.classList.toggle('active', visible);
   });
 
-  // Listen for show-corridors from onboarding
   window.addEventListener('show-corridors', () => {
     showCorridors();
     const btn = document.getElementById('btn-corridors');
     if (btn) btn.classList.add('active');
   });
 
-  // Language toggle
   document.getElementById('btn-lang')?.addEventListener('click', () => {
     toggleLang();
     // Re-render markers with new language tooltips
     const state = getFilterState();
     const filtered = filterPlaces(state);
     renderMarkers(filtered, handlePlaceClick);
-    renderCorridors(handleCorridorClick);
+    if (areCorridorsVisible()) renderCorridors(handleCorridorClick);
     updateLangButton();
   });
 
-  // Initialize language
   setLang(getLang());
   updateLangButton();
 
-  // Print checklist
   document.getElementById('btn-print')?.addEventListener('click', () => {
     window.print();
   });
 
-  // Generate print checklist
   buildPrintChecklist(allPlaces);
-
-  // Initialize onboarding (last — it overlays everything)
   initOnboarding();
-
-  // Fit map to show all places initially
   fitToPlaces(allPlaces);
 }
 

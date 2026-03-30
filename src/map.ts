@@ -97,13 +97,7 @@ export function renderMarkers(places: Place[], onClickPlace: (place: Place) => v
 }
 
 function selectMarker(marker: any, color: string): void {
-  // Reset previous selection
-  if (selectedMarker) {
-    selectedMarker.setRadius(MARKER_RADIUS);
-    selectedMarker.setStyle({ weight: 2, color: '#fff' });
-    const prevEl = selectedMarker.getElement?.();
-    if (prevEl) prevEl.classList.remove('pin-selected');
-  }
+  deselectMarker();
   selectedMarker = marker;
   marker.setRadius(MARKER_RADIUS_SELECTED);
   marker.setStyle({ weight: 3, color: '#1E293B' });
@@ -184,6 +178,10 @@ export function renderCorridors(onClickCorridor: (corridor: Corridor) => void): 
   });
 }
 
+export function areCorridorsVisible(): boolean {
+  return corridorsVisible;
+}
+
 export function toggleCorridors(): boolean {
   corridorsVisible = !corridorsVisible;
   if (corridorsVisible) {
@@ -201,9 +199,3 @@ export function showCorridors(): void {
   }
 }
 
-export function hideCorridors(): void {
-  if (corridorsVisible) {
-    corridorsVisible = false;
-    corridorLayers.remove();
-  }
-}
