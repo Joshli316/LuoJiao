@@ -31,6 +31,7 @@ const strings: Record<string, Record<Lang, string>> = {
   'filter.zone': { en: 'Zone', zh: '区域' },
   'filter.search': { en: 'Search places...', zh: '搜索地点...' },
   'filter.clear': { en: 'Clear all', zh: '清除筛选' },
+  'filter.clear_search': { en: 'Clear search', zh: '清除搜索' },
   'filter.no_results': { en: 'No places match these filters. Try removing a filter.', zh: '没有匹配的地点，试试移除一个筛选条件。' },
 
   // Languages
@@ -73,6 +74,15 @@ const strings: Record<string, Record<Lang, string>> = {
 
   // Sidebar detail
   'sidebar.details': { en: 'Details', zh: '详情' },
+  'meta.price_range': { en: 'Price', zh: '价格' },
+  'meta.famous_for': { en: 'Known For', zh: '特色' },
+  'meta.cuisine': { en: 'Cuisine', zh: '菜系' },
+  'meta.hours': { en: 'Hours', zh: '营业时间' },
+  'meta.popular_with': { en: 'Popular With', zh: '受欢迎人群' },
+  'meta.spice_level': { en: 'Spice Level', zh: '辣度' },
+  'meta.services': { en: 'Services', zh: '服务项目' },
+  'meta.specialty': { en: 'Specialty', zh: '特色' },
+  'meta.note': { en: 'Note', zh: '备注' },
   'onboard.more': { en: 'more', zh: '更多' },
 
   // Corridors

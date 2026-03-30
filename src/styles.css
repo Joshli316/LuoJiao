@@ -238,7 +238,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  padding: 5px 10px;
+  padding: 8px 14px;
   border: 1px solid var(--border);
   border-radius: 20px;
   background: var(--bg-card);
@@ -248,7 +248,7 @@ body {
   cursor: pointer;
   white-space: nowrap;
   transition: all 200ms;
-  min-height: 32px;
+  min-height: 44px;
 }
 .chip:hover { border-color: #94A3B8; }
 .chip.active {
@@ -267,7 +267,7 @@ body {
 
 .chip-count {
   font-size: 11px;
-  color: var(--text-light);
+  color: var(--text-muted);
   margin-left: 2px;
 }
 
@@ -327,13 +327,13 @@ body {
 }
 
 /* Desktop: right sidebar */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   #sidebar {
     top: 56px;
     right: 0;
     bottom: 0;
     width: 400px;
-    max-width: 40vw;
+    max-width: 35vw;
     transform: translateX(100%);
     border-left: 1px solid var(--border);
     box-shadow: -4px 0 20px rgba(0,0,0,0.08);
@@ -342,8 +342,8 @@ body {
   .sidebar-handle { display: none; }
 }
 
-/* Mobile: bottom sheet */
-@media (max-width: 767px) {
+/* Mobile + Tablet: bottom sheet */
+@media (max-width: 1023px) {
   #sidebar {
     bottom: 0;
     left: 0;
@@ -736,8 +736,8 @@ body {
   transform: translateX(-50%);
   z-index: 30;
   font-size: 11px;
-  color: var(--text-light);
-  background: rgba(255,255,255,0.9);
+  color: var(--text-muted);
+  background: rgba(255,255,255,0.95);
   padding: 4px 12px;
   border-radius: 12px;
   white-space: nowrap;

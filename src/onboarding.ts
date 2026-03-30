@@ -1,4 +1,4 @@
-import { Place, getPlaces } from './data';
+import { Place, getPlaces, corridors } from './data';
 import { t, getLang, safeGetItem, safeSetItem } from './i18n';
 import { highlightPlaces, resetMarkerStyles, fitToPlaces, setMapView } from './map';
 import { clearFilters } from './filters';
@@ -130,6 +130,15 @@ function renderStep(): void {
             </div>
           `).join('')}
           ${stepPlaces.length > 4 ? `<div class="step-more">+${stepPlaces.length - 4} ${t('onboard.more')}</div>` : ''}
+        </div>
+      ` : isLast ? `
+        <div class="step-places">
+          ${corridors.map(c => `
+            <div class="step-place-item">
+              <span class="step-place-zh">${c.name_zh}</span>
+              <span class="step-place-en">${c.name_en}</span>
+            </div>
+          `).join('')}
         </div>
       ` : ''}
       <div class="onboard-actions">

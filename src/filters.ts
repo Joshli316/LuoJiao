@@ -76,7 +76,7 @@ function renderFilters(): void {
             <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
           </svg>
           <input type="text" id="search-input" placeholder="${t('filter.search')}" value="${state.search}" autocomplete="off" aria-label="${t('filter.search')}" />
-          <button id="search-clear" class="search-clear ${state.search ? '' : 'hidden'}" aria-label="Clear search">
+          <button id="search-clear" class="search-clear ${state.search ? '' : 'hidden'}" aria-label="${t('filter.clear_search')}">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
           </button>
         </div>

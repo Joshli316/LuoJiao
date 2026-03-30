@@ -71,7 +71,7 @@ function buildPrintChecklist(places: Place[]): void {
     { title: 'Get Groceries / 买菜购物', subs: ['Chinese grocery store'] },
     { title: 'Get a SIM Card / 办手机卡', subs: ['Phone/SIM card shop'] },
     { title: 'Open a Bank Account / 开银行账户', subs: ['Bank with Chinese-speaking staff'] },
-    { title: 'Find Comfort Food / 找家乡味', subs: ['Regional Chinese restaurant', 'Late-night food'] },
+    { title: 'Find Comfort Food / 找家乡味', subs: ['Regional Chinese restaurant', 'Late-night food', 'Boba tea shop'] },
     { title: 'Essential Services / 必备服务', subs: ['Shipping services to China', 'DMV office', 'Immigration attorney'] },
   ];
 

@@ -15,6 +15,9 @@ export function initSidebar(closeCallback: () => void): void {
   sidebarEl = document.getElementById('sidebar')!;
   overlayEl = document.getElementById('sidebar-overlay')!;
   overlayEl.addEventListener('click', closeSidebar);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && sidebarEl.classList.contains('open')) closeSidebar();
+  });
 }
 
 function bindSidebarEvents(): void {
@@ -29,6 +32,7 @@ function bindSidebarEvents(): void {
 
 function onTouchStart(e: any): void {
   touchStartY = e.touches[0].clientY;
+  touchCurrentY = touchStartY;
   isDragging = true;
   sidebarEl.style.transition = 'none';
 }
@@ -186,12 +190,15 @@ export function openCorridor(corridor: Corridor): void {
 
 function openSidebar(): void {
   sidebarEl.classList.add('open');
+  sidebarEl.setAttribute('aria-modal', 'true');
+  setTimeout(() => sidebarEl.querySelector<HTMLElement>('.sidebar-close')?.focus(), 100);
   overlayEl.classList.add('visible');
   document.body.classList.add('sidebar-open');
 }
 
 export function closeSidebar(): void {
   sidebarEl.classList.remove('open');
+  sidebarEl.removeAttribute('aria-modal');
   sidebarEl.style.transform = '';
   overlayEl.classList.remove('visible');
   document.body.classList.remove('sidebar-open');
@@ -199,5 +206,7 @@ export function closeSidebar(): void {
 }
 
 function formatMetaKey(key: string): string {
+  const localized = t('meta.' + key);
+  if (localized !== 'meta.' + key) return localized;
   return key.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
 }
