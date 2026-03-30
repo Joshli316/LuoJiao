@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://luojiao.pages.dev/sitemap.xml
