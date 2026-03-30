@@ -38,14 +38,6 @@ export const CATEGORY_COLORS: Record<string, string> = {
   academic: '#F97316',  // orange
 };
 
-export const CATEGORY_ICONS: Record<string, string> = {
-  food: 'M12 6v6m0 0v6m0-6h6m-6 0H6',         // plus (bowl)
-  services: 'M9 12h6m-3-3v6',                    // service
-  spiritual: 'M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z', // star
-  fun: 'M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z', // smiley
-  academic: 'M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z', // mortarboard
-};
-
 // Transit corridors data
 export const corridors: Corridor[] = [
   {
@@ -119,10 +111,6 @@ export function setPlaces(data: Place[]): void {
 
 export function getPlaces(): Place[] {
   return placesData;
-}
-
-export function getPlaceById(id: number): Place | undefined {
-  return placesData.find(p => p.id === id);
 }
 
 export function filterPlaces(filters: {

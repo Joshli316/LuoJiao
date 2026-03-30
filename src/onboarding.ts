@@ -1,7 +1,7 @@
 import { Place, getPlaces } from './data';
 import { t, getLang } from './i18n';
 import { highlightPlaces, resetMarkerStyles, fitToPlaces, getMap } from './map';
-import { setStageFilter, clearFilters } from './filters';
+import { clearFilters } from './filters';
 
 interface OnboardingStep {
   titleKey: string;
@@ -51,7 +51,8 @@ export function initOnboarding(): void {
   onboardEl = document.getElementById('onboarding')!;
 
   // Show onboarding for first-time visitors
-  const hasVisited = localStorage.getItem('luojiao-visited');
+  let hasVisited: string | null = null;
+  try { hasVisited = localStorage.getItem('luojiao-visited'); } catch { /* noop */ }
   if (!hasVisited) {
     showOnboarding();
   }
@@ -81,11 +82,7 @@ export function hideOnboarding(): void {
   }, 350);
   resetMarkerStyles();
   clearFilters();
-  localStorage.setItem('luojiao-visited', '1');
-}
-
-export function isOnboardingActive(): boolean {
-  return isActive;
+  try { localStorage.setItem('luojiao-visited', '1'); } catch { /* noop */ }
 }
 
 function renderStep(): void {
@@ -135,7 +132,7 @@ function renderStep(): void {
               <span class="step-place-en">${p.name_en}</span>
             </div>
           `).join('')}
-          ${stepPlaces.length > 4 ? `<div class="step-more">+${stepPlaces.length - 4} more</div>` : ''}
+          ${stepPlaces.length > 4 ? `<div class="step-more">+${stepPlaces.length - 4} ${t('onboard.more')}</div>` : ''}
         </div>
       ` : ''}
       <div class="onboard-actions">

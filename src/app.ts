@@ -1,7 +1,7 @@
 import { Place, setPlaces, getPlaces, filterPlaces, Corridor } from './data';
 import { initMap, renderMarkers, renderCorridors, toggleCorridors, showCorridors, deselectMarker, panToPlace, fitToPlaces } from './map';
-import { initFilters, clearFilters, getFilterState } from './filters';
-import { initSidebar, openPlace, openCorridor, closeSidebar } from './sidebar';
+import { initFilters, getFilterState } from './filters';
+import { initSidebar, openPlace, openCorridor } from './sidebar';
 import { initOnboarding } from './onboarding';
 import { t, getLang, setLang, toggleLang } from './i18n';
 // @ts-ignore — JSON import handled by esbuild

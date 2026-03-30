@@ -26,10 +26,6 @@ export function initSidebar(closeCallback: () => void): void {
     handle.addEventListener('touchend', onTouchEnd);
   }
 
-  sidebarEl.addEventListener('touchstart', (e) => {
-    if ((e.target as HTMLElement).closest('.sidebar-handle')) return;
-    // Allow scrolling inside content
-  });
 }
 
 function onTouchStart(e: any): void {
@@ -123,7 +119,7 @@ export function openPlace(place: Place): void {
         ${place.nearest_transit ? `<p class="nearest-transit">${t('sidebar.nearest_transit')}: ${place.nearest_transit}</p>` : ''}
       </div>
 
-      ${metaHtml ? `<div class="place-section"><h4>Details</h4>${metaHtml}</div>` : ''}
+      ${metaHtml ? `<div class="place-section"><h4>${t('sidebar.details')}</h4>${metaHtml}</div>` : ''}
 
       <div class="place-section verified-section">
         <span class="verified-date">${t('sidebar.verified')}: ${place.last_verified}</span>
@@ -218,10 +214,6 @@ export function closeSidebar(): void {
   overlayEl.classList.remove('visible');
   document.body.classList.remove('sidebar-open');
   if (onClose) onClose();
-}
-
-export function isSidebarOpen(): boolean {
-  return isOpen;
 }
 
 function formatMetaKey(key: string): string {

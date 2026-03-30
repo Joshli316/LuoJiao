@@ -71,6 +71,10 @@ const strings: Record<string, Record<Lang, string>> = {
   'onboard.step_transit': { en: 'Learn Transit', zh: '了解交通' },
   'onboard.step_transit_desc': { en: 'Key bus and metro lines connecting Chinese neighborhoods.', zh: '连接华人社区的主要公交和地铁线路。' },
 
+  // Sidebar detail
+  'sidebar.details': { en: 'Details', zh: '详情' },
+  'onboard.more': { en: 'more', zh: '更多' },
+
   // Corridors
   'corridor.toggle': { en: 'Transit Lines', zh: '公交线路' },
 
@@ -82,7 +86,14 @@ const strings: Record<string, Record<Lang, string>> = {
   'print.btn': { en: 'Print Checklist', zh: '打印清单' },
 };
 
-let currentLang: Lang = (localStorage.getItem('luojiao-lang') as Lang) || 'zh';
+function safeGetItem(key: string): string | null {
+  try { return localStorage.getItem(key); } catch { return null; }
+}
+function safeSetItem(key: string, value: string): void {
+  try { localStorage.setItem(key, value); } catch { /* noop */ }
+}
+
+let currentLang: Lang = (safeGetItem('luojiao-lang') as Lang) || 'zh';
 
 export function t(key: string): string {
   const entry = strings[key];
@@ -96,7 +107,7 @@ export function getLang(): Lang {
 
 export function setLang(lang: Lang): void {
   currentLang = lang;
-  localStorage.setItem('luojiao-lang', lang);
+  safeSetItem('luojiao-lang', lang);
   document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n')!;
