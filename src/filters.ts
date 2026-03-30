@@ -4,6 +4,7 @@ import { t } from './i18n';
 export interface FilterState {
   categories: string[];
   stages: string[];
+  languages: string[];
   zones: string[];
   search: string;
 }
@@ -11,6 +12,7 @@ export interface FilterState {
 let state: FilterState = {
   categories: [],
   stages: [],
+  languages: [],
   zones: [],
   search: '',
 };
@@ -19,6 +21,7 @@ let onFilterChange: (places: Place[]) => void = () => {};
 
 const CATEGORIES = ['food', 'services', 'spiritual', 'fun', 'academic'];
 const STAGES = ['just_arrived', 'settling_in', 'living_here', 'working_here'];
+const LANGUAGES = ['Mandarin', 'Cantonese', 'English'];
 const ZONES = ['SGV', 'USC', 'DTLA'];
 
 export function initFilters(onChange: (places: Place[]) => void): void {
@@ -32,7 +35,7 @@ export function getFilterState(): FilterState {
 }
 
 export function clearFilters(): void {
-  state = { categories: [], stages: [], zones: [], search: '' };
+  state = { categories: [], stages: [], languages: [], zones: [], search: '' };
   const searchInput = document.getElementById('search-input') as HTMLInputElement;
   if (searchInput) searchInput.value = '';
   renderFilters();
@@ -103,6 +106,15 @@ function renderFilters(): void {
             </button>
           `).join('')}
         </div>
+        <div class="chip-group" role="group" aria-label="${t('filter.language')}">
+          ${LANGUAGES.map(lang => `
+            <button class="chip chip-lang ${state.languages.includes(lang) ? 'active' : ''}"
+                    data-chip="${lang}"
+                    aria-pressed="${state.languages.includes(lang)}">
+              ${t('lang.' + lang)}
+            </button>
+          `).join('')}
+        </div>
         <div class="chip-group" role="group" aria-label="${t('filter.zone')}">
           ${ZONES.map(zone => `
             <button class="chip chip-zone ${state.zones.includes(zone) ? 'active' : ''}"
@@ -166,6 +178,15 @@ function renderFilters(): void {
     });
   });
 
+  // Language chips
+  LANGUAGES.forEach(lang => {
+    container.querySelector(`[data-chip="${lang}"]`)?.addEventListener('click', () => {
+      toggleArrayItem(state.languages, lang);
+      renderFilters();
+      applyFilters();
+    });
+  });
+
   // Zone chips
   ZONES.forEach(zone => {
     container.querySelector(`[data-chip="${zone}"]`)?.addEventListener('click', () => {
@@ -187,5 +208,5 @@ function toggleArrayItem(arr: string[], item: string): void {
 
 function hasActiveFilters(): boolean {
   return state.categories.length > 0 || state.stages.length > 0 ||
-    state.zones.length > 0 || state.search.length > 0;
+    state.languages.length > 0 || state.zones.length > 0 || state.search.length > 0;
 }
