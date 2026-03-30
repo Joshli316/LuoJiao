@@ -3,10 +3,10 @@
 A map-based cultural navigation tool for Chinese international students in Los Angeles. Helps newcomers find places where they belong — not just where things are.
 
 ## Tech Stack
-- **Frontend:** Static HTML/TypeScript SPA + Tailwind CSS
-- **Map:** Leaflet.js + OpenStreetMap (no API key, no usage limits)
-- **Backend:** Cloudflare Workers (Hono) + D1 database
-- **Deploy:** Cloudflare Pages
+- **Frontend:** Static HTML/TypeScript SPA (esbuild bundled)
+- **Map:** Leaflet.js + MarkerCluster + OpenStreetMap/CartoDB tiles (no API key)
+- **Data:** Embedded JSON (data/places.json, 40 places) — no backend for v1
+- **Deploy:** Cloudflare Pages (`wrangler pages deploy .`)
 
 ## Structure
 ```
@@ -21,21 +21,29 @@ LuoJiao/
 │   ├── i18n.ts         # Bilingual EN/ZH string management
 │   ├── data.ts         # Data fetching and types
 │   └── styles.css      # Tailwind + custom styles
-├── worker/
-│   ├── index.ts        # Hono API routes
-│   └── schema.sql      # D1 database schema
 ├── data/
-│   └── seed.json       # Curated place data (30-40 places)
+│   └── places.json     # Curated place data (40 places)
+├── dist/
+│   └── app.js          # esbuild output
 ├── CLAUDE.md
 ├── plan.md
-└── wrangler.toml       # Cloudflare config
+├── build.js            # esbuild config
+├── 404.html            # Bilingual 404 page
+├── favicon.svg         # Map pin favicon
+├── og-image.jpg        # Social share image (1200x630)
+├── robots.txt
+└── sitemap.xml
 ```
 
 ## Entry Point
 `index.html`
 
-## Deployment
-`wrangler pages deploy .`
+## Build & Deploy
+```
+npm run build          # esbuild bundles src/app.ts -> dist/app.js
+wrangler pages deploy . --project-name=luojiao
+```
+Live at: https://luojiao.pages.dev
 
 ## Conventions
 - Bilingual (EN/ZH) — all UI strings and place names in both languages
@@ -53,8 +61,8 @@ LuoJiao/
 - Hybrid approach for future multi-community scalability
 
 ## Verification
-- App loads correctly at culturalmaps.pages.dev (or luojiao.pages.dev)
-- All 5 filters work (category, need stage, language, zone, search)
+- App loads correctly at luojiao.pages.dev
+- All 5 filter dimensions work (category, need stage, language, zone, search)
 - "First 72 Hours" flow completes end-to-end
 - Language toggle switches all UI + place names
 - Responsive at 375px (phone), 768px (iPad), 1024px (iPad Pro)
