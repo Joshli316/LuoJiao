@@ -3,7 +3,6 @@ import { t, getLang } from './i18n';
 
 let sidebarEl: HTMLElement;
 let overlayEl: HTMLElement;
-let isOpen = false;
 let onClose: (() => void) | null = null;
 
 // Touch handling for bottom sheet
@@ -59,7 +58,6 @@ function onTouchEnd(): void {
 }
 
 export function openPlace(place: Place): void {
-  const lang = getLang();
   const color = CATEGORY_COLORS[place.category] || '#6B7280';
   const catLabel = t('cat.' + place.category);
   const stageLabel = t('stage.' + place.need_stage);
@@ -187,14 +185,12 @@ export function openCorridor(corridor: Corridor): void {
 }
 
 function openSidebar(): void {
-  isOpen = true;
   sidebarEl.classList.add('open');
   overlayEl.classList.add('visible');
   document.body.classList.add('sidebar-open');
 }
 
 export function closeSidebar(): void {
-  isOpen = false;
   sidebarEl.classList.remove('open');
   sidebarEl.style.transform = '';
   overlayEl.classList.remove('visible');

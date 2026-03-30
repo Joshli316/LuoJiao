@@ -1,4 +1,4 @@
-import { Place, setPlaces, getPlaces, filterPlaces, Corridor } from './data';
+import { Place, setPlaces, getPlaces, filterPlaces } from './data';
 import { initMap, renderMarkers, renderCorridors, toggleCorridors, showCorridors, areCorridorsVisible, deselectMarker, panToPlace, fitToPlaces } from './map';
 import { initFilters, getFilterState } from './filters';
 import { initSidebar, openPlace, openCorridor } from './sidebar';
@@ -15,7 +15,7 @@ function init(): void {
 
   const allPlaces = getPlaces();
   renderMarkers(allPlaces, handlePlaceClick);
-  renderCorridors(handleCorridorClick);
+  renderCorridors(openCorridor);
 
   document.getElementById('btn-corridors')?.addEventListener('click', () => {
     const visible = toggleCorridors();
@@ -35,7 +35,7 @@ function init(): void {
     const state = getFilterState();
     const filtered = filterPlaces(state);
     renderMarkers(filtered, handlePlaceClick);
-    if (areCorridorsVisible()) renderCorridors(handleCorridorClick);
+    if (areCorridorsVisible()) renderCorridors(openCorridor);
     updateLangButton();
   });
 
@@ -54,10 +54,6 @@ function init(): void {
 function handlePlaceClick(place: Place): void {
   openPlace(place);
   panToPlace(place);
-}
-
-function handleCorridorClick(corridor: Corridor): void {
-  openCorridor(corridor);
 }
 
 function updateLangButton(): void {

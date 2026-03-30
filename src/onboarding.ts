@@ -1,6 +1,6 @@
 import { Place, getPlaces } from './data';
 import { t, getLang, safeGetItem, safeSetItem } from './i18n';
-import { highlightPlaces, resetMarkerStyles, fitToPlaces, getMap } from './map';
+import { highlightPlaces, resetMarkerStyles, fitToPlaces, setMapView } from './map';
 import { clearFilters } from './filters';
 
 interface OnboardingStep {
@@ -103,9 +103,7 @@ function renderStep(): void {
   } else if (currentStep === STEPS.length - 1) {
     // Transit step — show corridors
     resetMarkerStyles();
-    const map = getMap();
-    map.setView([34.05, -118.14], 11, { animate: true });
-    // Dispatch event to show corridors
+    setMapView(34.05, -118.14, 11);
     window.dispatchEvent(new CustomEvent('show-corridors'));
   }
 

@@ -4,7 +4,6 @@ import { t } from './i18n';
 export interface FilterState {
   categories: string[];
   stages: string[];
-  languages: string[];
   zones: string[];
   search: string;
 }
@@ -12,7 +11,6 @@ export interface FilterState {
 let state: FilterState = {
   categories: [],
   stages: [],
-  languages: [],
   zones: [],
   search: '',
 };
@@ -34,21 +32,9 @@ export function getFilterState(): FilterState {
 }
 
 export function clearFilters(): void {
-  state = { categories: [], stages: [], languages: [], zones: [], search: '' };
+  state = { categories: [], stages: [], zones: [], search: '' };
   const searchInput = document.getElementById('search-input') as HTMLInputElement;
   if (searchInput) searchInput.value = '';
-  renderFilters();
-  applyFilters();
-}
-
-export function setStageFilter(stage: string): void {
-  state = { categories: [], stages: [stage], languages: [], zones: [], search: '' };
-  renderFilters();
-  applyFilters();
-}
-
-export function setCategoryFilter(category: string): void {
-  state = { categories: [category], stages: [], languages: [], zones: [], search: '' };
   renderFilters();
   applyFilters();
 }
@@ -201,5 +187,5 @@ function toggleArrayItem(arr: string[], item: string): void {
 
 function hasActiveFilters(): boolean {
   return state.categories.length > 0 || state.stages.length > 0 ||
-    state.languages.length > 0 || state.zones.length > 0 || state.search.length > 0;
+    state.zones.length > 0 || state.search.length > 0;
 }

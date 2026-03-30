@@ -60,8 +60,8 @@ export function initMap(): any {
   return map;
 }
 
-export function getMap(): any {
-  return map;
+export function setMapView(lat: number, lng: number, zoom: number): void {
+  map.setView([lat, lng], zoom, { animate: true });
 }
 
 export function renderMarkers(places: Place[], onClickPlace: (place: Place) => void): void {
@@ -87,7 +87,7 @@ export function renderMarkers(places: Place[], onClickPlace: (place: Place) => v
     });
 
     marker.on('click', () => {
-      selectMarker(marker, color);
+      selectMarker(marker);
       onClickPlace(place);
     });
 
@@ -96,7 +96,7 @@ export function renderMarkers(places: Place[], onClickPlace: (place: Place) => v
   });
 }
 
-function selectMarker(marker: any, color: string): void {
+function selectMarker(marker: any): void {
   deselectMarker();
   selectedMarker = marker;
   marker.setRadius(MARKER_RADIUS_SELECTED);
@@ -124,9 +124,10 @@ export function deselectMarker(): void {
 }
 
 export function highlightPlaces(placeIds: number[]): void {
+  const idSet = new Set(placeIds);
   clusterGroup.eachLayer((layer: any) => {
     if (layer._placeId !== undefined) {
-      const isHighlighted = placeIds.includes(layer._placeId);
+      const isHighlighted = idSet.has(layer._placeId);
       layer.setStyle({
         fillOpacity: isHighlighted ? 1 : 0.25,
         opacity: isHighlighted ? 1 : 0.3,
