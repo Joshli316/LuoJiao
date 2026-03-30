@@ -1,6 +1,12 @@
 import { Place, CATEGORY_COLORS, Corridor } from './data';
 import { t, getLang } from './i18n';
 
+const escDiv = document.createElement('div');
+function esc(s: string): string {
+  escDiv.textContent = s;
+  return escDiv.innerHTML;
+}
+
 let sidebarEl: HTMLElement;
 let overlayEl: HTMLElement;
 let onClose: (() => void) | null = null;
@@ -43,7 +49,7 @@ function onTouchMove(e: any): void {
   const diff = touchCurrentY - touchStartY;
   if (diff > 0) {
     sidebarEl.style.transform = `translateY(${diff}px)`;
-    e.preventDefault();
+    if (e.cancelable) e.preventDefault();
   }
 }
 
@@ -78,7 +84,7 @@ export function openPlace(place: Place): void {
       metaHtml = `<div class="meta-grid">${entries.map(([k, v]) => `
         <div class="meta-item">
           <span class="meta-label">${formatMetaKey(k)}</span>
-          <span class="meta-value">${v}</span>
+          <span class="meta-value">${esc(String(v))}</span>
         </div>
       `).join('')}</div>`;
     }
@@ -98,10 +104,10 @@ export function openPlace(place: Place): void {
         <span class="stage-badge">${stageLabel}</span>
       </div>
 
-      <h2 class="place-name-zh">${place.name_zh}</h2>
-      <h3 class="place-name-en">${place.name_en}</h3>
+      <h2 class="place-name-zh">${esc(place.name_zh)}</h2>
+      <h3 class="place-name-en">${esc(place.name_en)}</h3>
 
-      <p class="place-address">${place.address}</p>
+      <p class="place-address">${esc(place.address)}</p>
 
       <div class="place-section">
         <h4>${t('sidebar.languages')}</h4>
@@ -170,10 +176,10 @@ export function openCorridor(corridor: Corridor): void {
         <span class="cat-badge" style="background: ${corridor.color}">${corridor.route_number}</span>
       </div>
 
-      <h2 class="place-name-zh">${corridor.name_zh}</h2>
-      <h3 class="place-name-en">${corridor.name_en}</h3>
+      <h2 class="place-name-zh">${esc(corridor.name_zh)}</h2>
+      <h3 class="place-name-en">${esc(corridor.name_en)}</h3>
 
-      <p class="corridor-desc">${lang === 'zh' ? corridor.description_zh : corridor.description_en}</p>
+      <p class="corridor-desc">${esc(lang === 'zh' ? corridor.description_zh : corridor.description_en)}</p>
 
       <div class="place-section">
         <h4>${t('filter.zone')}</h4>

@@ -142,7 +142,7 @@ function renderStep(): void {
         </div>
       ` : ''}
       <div class="onboard-actions">
-        ${currentStep > 0 ? `<button class="btn-onboard btn-prev">${t('onboard.prev')}</button>` : '<div></div>'}
+        <button class="btn-onboard btn-prev">${t('onboard.prev')}</button>
         <button class="btn-onboard btn-next ${isLast ? 'btn-finish' : ''}">
           ${isLast ? t('onboard.finish') : t('onboard.next')}
         </button>
@@ -192,6 +192,9 @@ function bindStepEvents(): void {
   onboardEl.querySelector('.btn-prev')?.addEventListener('click', () => {
     if (currentStep > 0) {
       currentStep--;
+      renderStep();
+    } else {
+      currentStep = -1;
       renderStep();
     }
   });

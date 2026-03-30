@@ -75,7 +75,7 @@ export const corridors: Corridor[] = [
     description_en: 'Runs along Valley Blvd through the heart of SGV. ~35 min from El Monte to DTLA, every 15 min.',
     description_zh: '沿Valley大道穿越圣谷核心地带。从El Monte到市中心约35分钟，每15分钟一班。',
     zones_connected: ['SGV', 'DTLA'],
-    color: '#F97316',
+    color: '#EA580C',
     coordinates: [
       [34.0735, -117.9380], // El Monte
       [34.0622, -118.0030], // Rosemead
@@ -130,10 +130,12 @@ export function filterPlaces(filters: {
     if (filters.zones?.length && !filters.zones.includes(place.zone)) return false;
     if (filters.search) {
       const q = filters.search.toLowerCase();
+      const metaStr = place.metadata ? JSON.stringify(place.metadata).toLowerCase() : '';
       const match = place.name_en.toLowerCase().includes(q)
         || place.name_zh.includes(q)
         || place.address.toLowerCase().includes(q)
-        || place.subcategory.toLowerCase().includes(q);
+        || place.subcategory.toLowerCase().includes(q)
+        || metaStr.includes(q);
       if (!match) return false;
     }
     return true;
