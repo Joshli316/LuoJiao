@@ -21,7 +21,8 @@
     "metadata": {
       "type": "supermarket",
       "chain": true,
-      "hours": "8AM-10PM daily"
+      "hours": "8AM-9PM daily",
+      "phone": "(626) 458-3399"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -49,7 +50,9 @@
       "type": "supermarket",
       "chain": false,
       "specialty": "Southeast Asian and Chinese groceries",
-      "established": 1991
+      "established": 1991,
+      "hours": "8AM-9PM daily",
+      "phone": "(626) 307-0062"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -76,7 +79,9 @@
     "metadata": {
       "type": "supermarket",
       "chain": true,
-      "specialty": "Hong Kong and Cantonese products"
+      "specialty": "Hong Kong and Cantonese products",
+      "hours": "8AM-8:30PM daily",
+      "phone": "(626) 280-8888"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -103,7 +108,9 @@
       "cuisine": "Sichuan",
       "michelin": true,
       "price_range": "$$",
-      "spice_level": "high"
+      "spice_level": "high",
+      "hours": "Mon-Sun 11:30AM-2:45PM, 5PM-9PM",
+      "phone": "(626) 283-4622"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -129,7 +136,9 @@
     "metadata": {
       "cuisine": "Sichuan",
       "famous_for": "Ignited LA Sichuan boom",
-      "price_range": "$$"
+      "price_range": "$$",
+      "hours": "Mon-Fri 11AM-2:30PM & 5PM-9PM; Sat-Sun 11AM-9:30PM",
+      "phone": "(626) 588-2284"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -156,7 +165,9 @@
     "metadata": {
       "cuisine": "Cantonese",
       "famous_for": "Traditional dim sum with cart service",
-      "price_range": "$$"
+      "price_range": "$$",
+      "hours": "8AM-9PM daily",
+      "phone": "(626) 872-0388"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -183,7 +194,9 @@
       "cuisine": "Northern Chinese",
       "famous_for": "Noodles, dumplings",
       "price_range": "$",
-      "popular_with": "USC students"
+      "popular_with": "USC students",
+      "hours": "Mon-Sat 11AM-11PM; Sun 11AM-9:30PM",
+      "phone": "(213) 741-9050"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -210,7 +223,8 @@
       "cuisine": "Northern Chinese / Shaanxi",
       "famous_for": "Hand-pulled noodles, liangpi, roujiamo",
       "price_range": "$",
-      "hours": "11AM-9PM"
+      "hours": "11AM-9PM daily",
+      "phone": "(213) 536-5057"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -236,7 +250,8 @@
     "metadata": {
       "type": "boba shop",
       "hours": "10AM-12AM daily",
-      "popular_with": "USC students"
+      "popular_with": "USC students",
+      "phone": "(323) 737-3008"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -263,7 +278,8 @@
     "metadata": {
       "type": "boba shop",
       "famous_for": "Signature cream-top teas",
-      "hours": "11:15AM-9:30PM Mon-Sat"
+      "hours": "Wed-Mon 11:15AM-8:30PM (Fri-Sun until 9:30PM); Tue closed",
+      "phone": "(626) 872-0200"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -289,7 +305,9 @@
     "metadata": {
       "cuisine": "Sichuan / Chongqing",
       "famous_for": "Chongqing fried chicken, toothpick lamb",
-      "price_range": "$$"
+      "price_range": "$$",
+      "hours": "Mon-Fri 11:30AM-2:45PM & 5PM-9PM; Sat-Sun 11:30AM-9PM",
+      "phone": "(626) 703-4165"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -316,7 +334,9 @@
     "metadata": {
       "type": "bank",
       "founded": 1973,
-      "note": "Founded to serve Chinese American community"
+      "note": "Founded to serve Chinese American community",
+      "hours": "Mon-Thu 9AM-5PM; Fri 9AM-6PM; Sat 9AM-2PM",
+      "phone": "(626) 280-1688"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -343,7 +363,9 @@
     "metadata": {
       "type": "bank",
       "founded": 1962,
-      "note": "First Chinese American commercial bank in SoCal"
+      "note": "First Chinese American commercial bank in SoCal",
+      "hours": "Mon-Thu 9AM-5PM; Fri 9AM-6PM; Sat 10AM-2PM",
+      "phone": "(626) 588-1911"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -372,7 +394,9 @@
         "prepaid SIM",
         "phone activation",
         "plans"
-      ]
+      ],
+      "hours": "Mon-Sat 10AM-8PM; Sun 10AM-6PM",
+      "phone": "(213) 224-3744"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -402,7 +426,8 @@
         "Standard Express"
       ],
       "delivery_time": "3-7 business days to China",
-      "note": "Drop-off location; main hub in Cerritos"
+      "note": "Partner drop-off via U & Me Postal; call to confirm",
+      "phone": "1-855-901-1133 (SF Express US customer service)"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -429,7 +454,9 @@
       "services": [
         "registration",
         "vehicle records"
-      ]
+      ],
+      "hours": "Mon-Fri 9AM-5PM; Sat 9AM-1PM; Sun closed",
+      "phone": "(626) 289-4491"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -460,7 +487,9 @@
         "OPT/CPT",
         "green card",
         "citizenship"
-      ]
+      ],
+      "hours": "Mon-Thu 9AM-4:30PM; Fri 9AM-4PM; Sat-Sun closed",
+      "phone": "(323) 909-8655"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -491,8 +520,9 @@
         "medical",
         "mental health"
       ],
-      "hours": "Mon-Sat 8:30AM-5PM",
-      "accepts_insurance": true
+      "hours": "Medical: Mon-Sat 8AM-12PM & 1PM-5PM; Dental (Ste 315): Mon-Sat 8:30AM-5PM",
+      "accepts_insurance": true,
+      "phone": "(213) 808-1700"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -522,7 +552,9 @@
         "health services",
         "social services",
         "immigration assistance"
-      ]
+      ],
+      "hours": "Primary Care: Mon-Sat 8AM-5PM (closed 3rd & 4th Sat); Dental: Mon, Wed-Sat 8:30AM-5PM; Behavioral Health: Mon-Fri 8AM-5PM",
+      "phone": "(626) 988-8087"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -552,7 +584,9 @@
         "mental health",
         "pharmacy"
       ],
-      "note": "USC student insurance accepted"
+      "note": "USC student insurance accepted",
+      "hours": "Mon/Tue/Thu 8:30AM-7PM; Wed 9:30AM-7PM; Fri 9:30AM-4:30PM; Sat-Sun 10AM-2PM",
+      "phone": "(213) 740-9355"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -582,7 +616,9 @@
         "mandarin": "Sunday 9:00 AM",
         "cantonese": "Sunday 11:00 AM",
         "english": "Sunday 11:00 AM"
-      }
+      },
+      "hours": "Sun 9AM-1:30PM (Mandarin 9AM, Cantonese 11AM, English 11AM); Mon-Sat closed",
+      "phone": "(626) 289-1284"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -613,7 +649,9 @@
         "mandarin": "Sunday 9:30 AM",
         "cantonese": "Sunday 9:30 AM",
         "english": "Sunday 11:15 AM"
-      }
+      },
+      "hours": "Sun 9AM-12PM; Mon closed; Tue-Fri 9AM-5PM; Sat 12PM-5PM",
+      "phone": "(626) 570-8971"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -639,8 +677,9 @@
     "metadata": {
       "tradition": "Fo Guang Shan (Mahayana Buddhism)",
       "note": "Largest Buddhist monastery in the Western Hemisphere",
-      "hours": "9AM-5PM daily",
-      "tours_available": true
+      "hours": "Daily 9AM-5PM; Vegetarian buffet: Mon-Fri 11:30AM-1:30PM, Sat 11:30AM-2:30PM, Sun 12:30PM-2:30PM",
+      "tours_available": true,
+      "phone": "(626) 961-9697"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -665,7 +704,9 @@
     "cultural_corridor": "Atlantic Blvd Corridor",
     "metadata": {
       "tradition": "Taoism / Chinese folk religion",
-      "note": "Popular for fortune telling and prayers"
+      "note": "Popular for fortune telling and prayers",
+      "hours": "Wed-Sun 10AM-4PM; Mon-Tue closed",
+      "phone": "(626) 308-1133"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -723,13 +764,14 @@
     "cultural_corridor": "Westfield Santa Anita",
     "metadata": {
       "type": "KTV",
-      "hours": "2PM-2AM daily",
+      "hours": "Mon-Sun 2PM-2AM",
       "features": [
         "private rooms",
         "bar",
         "food menu"
       ],
-      "popular_with": "Chinese students and young professionals"
+      "popular_with": "Chinese students and young professionals",
+      "phone": "(626) 348-8156"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -757,7 +799,9 @@
       "chain": true,
       "famous_for": "Noodle dance performance, exceptional service",
       "price_range": "$$$",
-      "popular_with": "Chinese students for celebrations"
+      "popular_with": "Chinese students for celebrations",
+      "hours": "Mon-Thu 11AM-12AM; Fri-Sat 11AM-1AM; Sun 11AM-12AM",
+      "phone": "(626) 724-5665"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -783,7 +827,9 @@
     "metadata": {
       "cuisine": "Chinese hot pot",
       "famous_for": "100+ ingredients, 18+ broth options",
-      "price_range": "$$"
+      "price_range": "$$",
+      "hours": "Mon-Sun 11AM-1:30AM",
+      "phone": "(626) 656-6210"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -810,7 +856,9 @@
       "type": "movie theater",
       "screens": 14,
       "note": "Shows Chinese-language films during major releases",
-      "nearby": "Atlantic Times Square shopping center"
+      "nearby": "Atlantic Times Square shopping center",
+      "hours": "Mon-Sun 11AM-11PM (showtimes vary)",
+      "phone": "(626) 407-0240"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -836,7 +884,9 @@
     "metadata": {
       "type": "boba shop / hangout",
       "famous_for": "High-protein, low-sugar boba",
-      "popular_with": "USC students"
+      "popular_with": "USC students",
+      "hours": "Mon-Sun 8AM-1:30AM",
+      "phone": "(323) 241-2979"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -845,7 +895,7 @@
     "id": 31,
     "name_en": "USC Office of International Services (OIS)",
     "name_zh": "南加大国际学生服务办公室",
-    "address": "3601 Watt Way, GFS 120, Los Angeles, CA 90089",
+    "address": "649 W 34th St, Royal Street Parking Structure, Suite 101, Los Angeles, CA 90089",
     "lat": 34.021,
     "lng": -118.2863,
     "category": "academic",
@@ -867,7 +917,8 @@
         "new student orientation",
         "immigration workshops"
       ],
-      "phone": "(213) 740-2666"
+      "phone": "(213) 740-2666",
+      "hours": "Virtual drop-in advising: Mon/Wed/Fri 1-3PM, Tue/Thu 10AM-12PM. J-1 advising Tue & Wed."
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -894,7 +945,9 @@
     "metadata": {
       "type": "bookstore",
       "specialty": "Chinese language books, stationery",
-      "website": "ChineseBooksUSA.com"
+      "website": "ChineseBooksUSA.com",
+      "hours": "Mon-Sun 8:30AM-6PM",
+      "phone": "(626) 572-8518"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -903,7 +956,7 @@
     "id": 33,
     "name_en": "Elite Prep (Arcadia)",
     "name_zh": "精英学院（亚凯迪亚）",
-    "address": "1127 S Baldwin Ave, Arcadia, CA 91007",
+    "address": "1135 W Huntington Dr, Ste 220, Arcadia, CA 91006",
     "lat": 34.125,
     "lng": -118.0355,
     "category": "academic",
@@ -925,7 +978,9 @@
         "AP exam prep",
         "college consulting"
       ],
-      "popular_with": "Chinese students and families"
+      "popular_with": "Chinese students and families",
+      "hours": "Tue-Fri 12PM-8PM; Sat 8:30AM-5:30PM; Sun-Mon closed",
+      "phone": "(626) 287-1245"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -955,7 +1010,9 @@
         "phone booths",
         "kitchen"
       ],
-      "note": "Popular with international professionals and startups"
+      "note": "Popular with international professionals and startups",
+      "hours": "Mon-Fri 8AM-5PM; Sat-Sun closed (building access 24/7 for members)",
+      "phone": "(213) 204-8397"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -985,7 +1042,9 @@
         "East Asian studies",
         "Chinese newspapers"
       ],
-      "location_detail": "Doheny Memorial Library"
+      "location_detail": "Doheny Memorial Library",
+      "hours": "Mon-Thu 9AM-8PM; Fri 9AM-5PM; Sat closed; Sun 12PM-8PM (academic year; summer hours 9AM-5PM Mon-Fri)",
+      "phone": "(213) 740-1772"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -1016,7 +1075,9 @@
         "health workshops",
         "social events"
       ],
-      "note": "Good for connecting with broader Chinese community"
+      "note": "Good for connecting with broader Chinese community",
+      "hours": "Mon-Fri 9AM-5PM",
+      "phone": "(626) 571-7977"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -1042,7 +1103,9 @@
     "metadata": {
       "cuisine": "Northern Chinese / Shaanxi",
       "famous_for": "Hand-pulled noodles, liangpi",
-      "price_range": "$"
+      "price_range": "$",
+      "hours": "Mon-Sun 11AM-7PM",
+      "phone": "(213) 687-1063"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -1069,7 +1132,9 @@
     "metadata": {
       "cuisine": "Cantonese",
       "famous_for": "Affordable quick dim sum",
-      "price_range": "$"
+      "price_range": "$",
+      "hours": "Mon/Wed-Fri 8AM-5:30PM; Tue 8AM-3:30PM; Sat-Sun 7:30AM-7PM",
+      "phone": "(626) 307-5800"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -1095,7 +1160,9 @@
     "metadata": {
       "type": "boba shop / hangout",
       "chain": true,
-      "famous_for": "Fresh fruit teas, Taiwanese style"
+      "famous_for": "Fresh fruit teas, Taiwanese style",
+      "hours": "Mon-Sun 12PM-9:30PM",
+      "phone": "(213) 340-3182"
     },
     "last_verified": "2026-03",
     "status": "active"
@@ -1104,7 +1171,7 @@
     "id": 40,
     "name_en": "USC US-China Institute",
     "name_zh": "南加大美中学院",
-    "address": "3502 Watt Way, ASC 105, Los Angeles, CA 90089",
+    "address": "3502 Watt Way, ASC 234, Los Angeles, CA 90089",
     "lat": 34.0218,
     "lng": -118.2855,
     "category": "academic",
@@ -1126,7 +1193,8 @@
         "research events",
         "cultural programming"
       ],
-      "note": "Hosts events connecting Chinese and American perspectives"
+      "note": "Hosts events connecting Chinese and American perspectives",
+      "phone": "(213) 821-4382"
     },
     "last_verified": "2026-03",
     "status": "active"
